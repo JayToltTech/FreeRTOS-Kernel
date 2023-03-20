@@ -1,5 +1,5 @@
 /*
- * FreeRTOS Kernel <DEVELOPMENT BRANCH>
+ * FreeRTOS Kernel V10.5.1
  * Copyright (C) 2021 Amazon.com, Inc. or its affiliates.  All Rights Reserved.
  *
  * SPDX-License-Identifier: MIT
@@ -118,7 +118,6 @@ void * pvPortMalloc( size_t xWantedSize )
     {
         if( pvReturn == NULL )
         {
-            extern void vApplicationMallocFailedHook( void );
             vApplicationMallocFailedHook();
         }
     }
