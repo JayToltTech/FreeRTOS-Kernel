@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.15)
-
+cmake_policy(SET CMP0156 NEW)
 # User is responsible to one mandatory option:
 #   FREERTOS_PORT, if not specified and native port detected, uses the native compile.
 #
